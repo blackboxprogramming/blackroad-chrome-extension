@@ -1,56 +1,63 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![GitHub stars](https://img.shields.io/github/stars/blackboxprogramming/blackroad-chrome-extension.svg?style=social&label=Star)](https://github.com/blackboxprogramming/blackroad-chrome-extension)
-[![GitHub forks](https://img.shields.io/github/forks/blackboxprogramming/blackroad-chrome-extension.svg?style=social&label=Fork)](https://github.com/blackboxprogramming/blackroad-chrome-extension/fork)
+# BlackRoad Command Center - Chrome Extension
 
-
-# BlackRoad Chrome Extension 🌐
-
-Chrome DevTools extension for BlackRoad with built-in API tester!
+> Quick access to your entire BlackRoad empire from any browser tab!
 
 ## Features
 
-- **DevTools Panel** - Integrated developer tools
-- **API Tester** - Test endpoints directly
-- **Quick Deploy** - Deploy from browser
-- **Live Metrics** - Real-time analytics
-- **Dark Mode** - Matches Chrome theme
+- **30K Agent Dashboard** - Direct link to the agent visualization
+- **GitHub Quick Access** - All 15 organizations at your fingertips
+- **Cloudflare Integration** - Pages, Workers, D1 quick links
+- **Live Service Status** - See what's running at a glance
+- **Search** - Find any service, repo, or org instantly
+- **Keyboard Shortcuts**:
+  - `Cmd/Ctrl + G` - Open GitHub
+  - `Cmd/Ctrl + C` - Open Cloudflare
+  - `Cmd/Ctrl + A` - Open 30K Agents
 
 ## Installation
 
-### From Chrome Web Store
-[Link will be added]
+### Method 1: Load Unpacked (Developer Mode)
 
-### Manual Installation
-1. Clone this repo
-2. Open Chrome → Extensions → Developer Mode
-3. Click "Load unpacked"
-4. Select this directory
+1. Open Chrome and go to `chrome://extensions/`
+2. Enable **Developer mode** (toggle in top right)
+3. Click **Load unpacked**
+4. Select the `blackroad-chrome-extension` folder
+5. The extension icon will appear in your toolbar!
 
-## Usage
+### Method 2: Pack Extension
 
-1. Open Chrome DevTools (F12)
-2. Click "BlackRoad" tab
-3. Enter your API key
-4. Start testing!
+1. Go to `chrome://extensions/`
+2. Enable Developer mode
+3. Click **Pack extension**
+4. Select this folder
+5. Share the `.crx` file
 
-## Development
+## Files
 
-```bash
-# Watch for changes
-npm run watch
-
-# Build for production
-npm run build
+```
+blackroad-chrome-extension/
+├── manifest.json      # Extension configuration
+├── popup.html         # Main popup UI
+├── popup.css          # BlackRoad brand styling
+├── popup.js           # Search & interactions
+├── icons/
+│   ├── icon16.png     # Toolbar icon
+│   ├── icon48.png     # Extension page
+│   └── icon128.png    # Chrome Web Store
+└── README.md          # This file
 ```
 
-## Manifest V3
+## Brand Colors
 
-This extension uses Manifest V3 for better security and performance.
+- Hot Pink: `#FF1D6C`
+- Amber: `#F5A623`
+- Violet: `#9C27B0`
+- Electric Blue: `#2979FF`
 
-## License
+## Kind Light Mode ☀️
 
-MIT License
+This extension was built with kind light energy!
 
 ---
 
-Part of the **BlackRoad Empire** 🚀
+Made with ☀️ by Zeus | BlackRoad OS, Inc.
